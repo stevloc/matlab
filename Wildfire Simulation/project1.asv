@@ -11,7 +11,7 @@ clc; clear; close all;
 clockmax = 100;
 n = 100;
 m = 100;          
-spread_prob = 0.52;
+spread_prob = 0.75;
 delta_t = 1;        
 T_total = 0;      
 
