@@ -9,7 +9,7 @@
 
 clear; close all;
 
-years = 100;
+years = 1;
 totalSeasons = 4 * years;
 timeStep = 0.2;
 timePoints = 0:timeStep:totalSeasons;
@@ -86,7 +86,7 @@ h2 = plot(timePoints, catPop, '-', 'Color', [0.929, 0.694, 0.125], 'LineWidth', 
 h3 = plot(timePoints, hawkPop, 'b-', 'LineWidth', 1.5);
 xlabel('Time (Seasons)');
 ylabel('Population');
-title({'NYC Urban Ecosystem Population Dynamics', 'Simulated Over 100 Years'});
+title({'NYC Urban Ecosystem Population Dynamics', sprintf('Simulated Over %d Year(s)', years)});
 legend([h1 h2 h3], {'Rats', 'Feral Cats', 'Hawks'}, 'Location', 'best');
 
 % Seasonal Averages
@@ -101,7 +101,7 @@ b = bar(categorical(seasonOrder, seasonOrder), seasonalAvg, 'grouped');
 b(1).FaceColor = 'r';
 b(2).FaceColor = [0.929, 0.694, 0.125];
 b(3).FaceColor = 'b';
-title('Average Seasonal Populations Across 100 Years');
+title(sprintf('Simulated Over %d Year(s)', years));
 ylabel('Average Population');
 legend('Rats', 'Cats', 'Hawks');
 grid on;
