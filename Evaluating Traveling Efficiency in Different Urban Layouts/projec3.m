@@ -1,3 +1,12 @@
+% Evaluating Traveling Efficiency in Different Urban Layouts
+%
+% Main
+% sl9820
+% Intro to Computer Simulation
+% This MATLAB Code compares travel efficiency in Manhattan (grid) vs. Amsterdam (radial) street layouts
+% by simulating 1000 trials of movement across each network. Efficiency is measured as the ratio
+% of Euclidean to actual path distance, with results visualized using bar plots and error bars
+
 
 num_trials = 1000;
 block_length = 100; speed = 10;

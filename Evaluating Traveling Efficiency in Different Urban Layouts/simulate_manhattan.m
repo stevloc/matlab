@@ -1,3 +1,13 @@
+% Evaluating Traveling Efficiency in Different Urban Layouts
+%
+% Simulate Manhattan Function
+% sl9820
+% Intro to Computer Simulation
+% Simulates travel across a Manhattan-style grid using horizontal-then-vertical paths.
+% Random start and goal locations are selected; total distance, travel time, Euclidean
+% distance, and efficiency are computed. A grid plot visualizes the route.
+
+
 function [time, distance, euclid, efficiency] = simulate_manhattan(rows, cols, block_length, speed)
     start = [randi(cols), randi(rows)];
     goal  = [randi(cols), randi(rows)];

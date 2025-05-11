@@ -1,3 +1,14 @@
+% Evaluating Traveling Efficiency in Different Urban Layouts
+%
+% Simulate Amsterdam Function
+% sl9820
+% Intro to Computer Simulation
+% Simulates travel in a radial Amsterdam-style city layout with R rings and S spokes.
+% Random start and goal points are chosen; the shortest of three path types (radial-first,
+% angular-first, or through-center) is computed. Outputs travel time, total distance,
+% Euclidean distance, and path efficiency, with optional path visualization.
+
+
 function [time, distance, euclid, efficiency] = simulate_amsterdam(R, S_half, block_length, speed)
 
     S = S_half * 2;
